@@ -1,0 +1,559 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-section {
+    background-color: red;
+    background-image: url("./images/mainbg.png");
+    width: 100%;
+    height: 75vh;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    border: 2px solid yellow;
+    display: flex;
+    justify-content: space-between;
+    top: 20px;
+    width: 90%;
+    margin: auto;
+    /* align-items:center; */
+
+}
+
+.navbar p {
+    color: wheat;
+}
+
+.nav-menu {
+    display: flex;
+    /* justify-content: flex-end; */
+    /* justify-content:space-between; */
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: rgb(252, 131, 131);
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95vw;
+    /* margin-left: 10%; */
+    margin: auto;
+    /* padding-top: 20px; */
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    /* padding: 10px 20px; */
+}
+
+nav ul li a {
+    /* padding: 10px; */
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav p {
+    color: wheat;
+}
+
+.header {
+    padding-top: 20px;
+
+}
+
+.main-heading {
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+}
+
+#zomato-name {
+    font-size: 90px;
+    font-weight: bold;
+}
+
+#zomato-title {
+    font-size: 40px;
+}
+
+.search {
+    background-color: white;
+    width: 60vw;
+    margin: auto;
+    padding: 16px;
+    display: flex;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.search .location-icon {
+    color: rgb(241, 88, 88);
+    font-size: 20px;
+    width: 25px;
+}
+
+.search .search-icon {
+    color: rgb(134, 134, 134);
+    font-size: 20px;
+}
+
+.search .location-search {
+    width: 30%;
+}
+
+.search .restaurant-search {
+    width: 70%;
+    /* border-left: 1px solid black ; */
+}
+
+.search div {
+    padding-left: 10px;
+    border-left: 1px solid black;
+}
+
+.search input {
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+
+.food-items {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 40px 0;
+}
+
+.food-item1 {
+    width: 30vw;
+    height: 45vh;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 10px;
+    overflow: hidden;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.food-item1:hover {
+    transform: scale(1.05);
+    /*for zoom effect*/
+}
+
+.food-item1 img {
+    width: 100%;
+    transform: translateY(-3.5rem);
+    /* to adjust the image verticaly*/
+}
+
+.food-image {
+    /* border: 3px solid red; */
+    height: 68%;
+    overflow: hidden;
+}
+
+.food-item1 .food-para {
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+.food-para .food-image-para1 {
+    font-size: 19px;
+    color: rgb(49, 49, 49);
+    margin-bottom: 7px;
+}
+
+.food-para .food-image-para2 {
+    color: rgb(100, 100, 100);
+    font-size: 15px;
+}
+
+.collection-heading {
+    margin-left: 53px;
+}
+
+.collection-heading .collection-heading1 {
+    font-size: 32px;
+}
+
+.collection-heading2 {
+    /* border: 1px solid red; */
+    width: 93%;
+    margin-top: 8px;
+    /* margin: auto; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#collection-pune {
+    color: rgb(241, 88, 88);
+    cursor: pointer;
+}
+
+#collection-pune i {
+    color: rgb(241, 88, 88);
+    cursor: pointer;
+}
+
+.collections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -70px;
+}
+
+.collection {
+    height: 63vh;
+    width: 22vw;
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+.collection img {
+    height: 100%;
+    width: 100%;
+}
+
+.collection-para {
+    position: absolute;
+    bottom: 0px;
+    margin: 15px;
+}
+
+.collection-para p {
+    color: white;
+    font-size: 13px;
+}
+
+.collection-para .collection-para1 {
+    font-size: 18px;
+    margin: 5px 0;
+    /*for the space between both the paragraph*/
+}
+
+.black-color {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.744));
+    position: absolute;
+}
+
+.localities-heading {
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.localities {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.localities-name {
+    border: 1px solid rgb(233, 232, 232);
+    border-radius: 10px;
+    width: 30%;
+    margin: 16px;
+    padding: 12px;
+    position: relative;
+    cursor: pointer;
+}
+
+.localities-name:hover {
+    box-shadow: 0px 2px 5px 0px rgb(234, 234, 234);
+}
+
+.localities-name .lacal-name {
+    font-size: 19px;
+    margin-bottom: 7px;
+}
+
+.localities-name .localities-places {
+    color: gray;
+}
+
+.localities-name .angle-right {
+    margin-left: 90%;
+    position: absolute;
+    bottom: 40%;
+}
+
+.localities-name .see-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.localities-name .see-more p {
+    margin-right: 12px;
+}
+
+.main-sec {
+    background-color: rgb(255, 238, 238);
+    margin-top: 70px;
+}
+
+.app-section {
+    /* border: 2px solid red; */
+    /* background-color: rgb(255, 238, 238); */
+    width: 75vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.app-section .app-img img {
+    width: 60%;
+    height: 70%;
+    margin-left: 110px;
+}
+
+.app-section .app-para {
+    margin-right: 52px;
+}
+
+.app-para {
+    margin: 10px;
+}
+
+.app-para .app-para-size {
+    width: 40vw;
+}
+
+.app-para-heading {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.app-para-size .app-para-sub {
+    margin: 5px;
+    font-size: 15px;
+    color: rgb(115, 115, 115);
+}
+
+.app-para-size .input-radio {
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.input-radio .rad {
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.app-para .input-btn {
+    display: flex;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.app-para .input-btn input,
+button {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.app-para .input-btn input {
+    width: 250px;
+}
+
+.app-para .input-btn button {
+    margin-left: 7px;
+    background-color: rgb(241, 88, 88);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.input-btn button:hover {
+    background-color: rgb(245, 66, 66);
+}
+
+.app-para .dwn-app-form {
+    color: gray;
+    font-size: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.app-para .play-storeimg img {
+    width: 150px;
+    margin-top: 25px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.explore {
+    background-color: rgba(246, 243, 243, 0.42);
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    margin-top: 0px;
+}
+
+.explore p {
+    font-size: 30px;
+    padding-left: 5px;
+}
+
+.explore .box p {
+    font-size: 16px;
+}
+
+.explore-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* width: 90vw; */
+    /* height: 20vh; */
+}
+
+.explore-box .box {
+    background-color: white;
+    border: 1px solid rgb(227, 226, 226);
+    width: 93vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 23px;
+    margin: 10px 9px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: rgb(240, 240, 240);
+    padding-top: 50px;
+}
+
+.zomato-footer {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0 40px;
+    /* flex-wrap: wrap; */
+}
+
+.zomato-foot {
+    font-size: 33px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.btn-footer .btn {
+    width: 11vw;
+    font-size: 16px;
+    border: 1px solid gray;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 14px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.footer-area {
+    /* border: 2px solid yellow; */
+    margin-left: 16px;
+    padding: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.footer-area .footer-list {
+    margin: 16px;
+    padding: -3px;
+    font-size: 14px;
+}
+
+.footer-list p {
+    padding-top: 10px;
+    cursor: pointer;
+    color: gray;
+}
+
+.footer-list p:hover {
+    color: rgb(80, 80, 80);
+}
+
+.footer-area .footer-list .about-zomato {
+    font-weight: 550;
+    color: black;
+}
+
+.footer-list .social-icon-size {
+    font-size: 20px;
+    padding-top: 10px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.footer-list .footer-img img {
+    padding-top: 15px;
+    width: 140px;
+    cursor: pointer;
+}
+
+.footer-list .footer-img {
+    padding-top: 10px;
+}
+
+.footer-area .footer-list-zomaverse {
+    margin-top: -52px;
+}
+
+.footer-area .footer-list-for-restaurants {
+    margin-top: -52px;
+}
+
+.footer-area .footer-list-learn-more {
+    margin-top: -61px;
+}
+
+.footer-area .footer-list-social-links {
+    margin-top: -34px;
+    padding-left: 10px;
+}
